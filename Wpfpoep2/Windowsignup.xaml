@@ -1,0 +1,41 @@
+﻿<Window x:Class="Wpfpoep2.Windowsignup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpfpoep2"
+        mc:Ignorable="d"
+        Title="Windowsignup" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/loginBackground.jpg"/>
+        </Grid.Background>
+        <Button x:Name="SignUps" Content="Sign Up" HorizontalAlignment="Left" Margin="234,263,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="35" Width="145" Click="SignUp_Click" Background="#FFD0BBFF" FontSize="18">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.465"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="416,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <Label Content="User Name :" HorizontalAlignment="Left" Margin="280,105,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="Password :" HorizontalAlignment="Left" Margin="280,150,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="User Type :" HorizontalAlignment="Left" Margin="280,201,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="drpType" HorizontalAlignment="Left" Margin="416,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="155" Height="20">
+            <UIElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </UIElement.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtusernames" HorizontalAlignment="Left" Margin="416,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <Button Content="login" HorizontalAlignment="Left" Margin="433,262,0,0" VerticalAlignment="Top" Height="36" Width="151" Click="Button_Click_1" Background="#FFCAB3FF" FontSize="18"/>
+        <Label Content="SIGN UP" HorizontalAlignment="Left" Margin="340,37,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Arial"/>
+    </Grid>
+</Window>
